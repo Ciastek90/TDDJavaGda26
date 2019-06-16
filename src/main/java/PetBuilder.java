@@ -55,7 +55,7 @@ public class PetBuilder {
      * Metoda do budowania produktu
      * @return produkt zwierzątko
      */
-    public Pet build(){
+    public Pet  build(){
         return result;
     }
 }

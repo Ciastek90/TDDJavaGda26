@@ -68,6 +68,11 @@ public class Pet {
      * @return Imię zwierzątka
      */
     public String getName() {
+        try {
+            Thread.sleep(10000000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         return name;
     }
 

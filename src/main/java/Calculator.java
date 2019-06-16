@@ -11,6 +11,10 @@ public final class Calculator {
         return numberA + numberB;
     }
 
+    public static int sum(int numberA, int numberB){
+        return numberA + numberB;
+    }
+
     /**
      * @param numberA Pierwsza liczba wchodząca w skład działania
      * @param numberB Druga liczba wchodząca w skład działania
@@ -40,6 +44,22 @@ public final class Calculator {
         }
 
         return dividend / divider;
+    }
+
+    public static double log(double a, double x){
+        if(a <= 0.0){
+            throw new IllegalArgumentException("Podstawa logarytmu musi być większa od 0");
+        }
+
+        if(x <= 0.0){
+            throw new IllegalArgumentException("Liczba logarytmowana nie może być mniejsza od 0");
+        }
+
+        if(a == 1.0){
+            throw new IllegalArgumentException("Podstawa logarytmu musi być różna od 1");
+        }
+
+        return Math.log(x) / Math.log(a);//logax
     }
 
     /**
